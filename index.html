@@ -27,7 +27,8 @@
       --shadow: 0 12px 30px -14px rgba(20, 22, 43, 0.22);
     }
     * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
+    html { scroll-behavior: smooth; overflow-x: hidden; }
+    body { overflow-x: hidden; }
     body {
       margin: 0;
       background: var(--cream);
@@ -124,7 +125,18 @@
     .btn-ghost:hover { border-color: var(--navy); }
     .btn-wa svg { flex: none; }
     .nav-cta-group { display: none; align-items: center; gap: 8px; }
-    .burger { display: inline-flex; background: none; border: none; cursor: pointer; padding: 6px; }
+    .burger { display: inline-flex; background: none; border: none; cursor: pointer; padding: 6px; flex: none; }
+    .nav-right { flex: none; }
+    .brand-row { min-width: 0; }
+    @media (max-width: 979px) {
+      .nav-inner { padding: 12px 16px; gap: 8px; }
+      .logo { font-size: 18px; }
+      .suite-badge { display: none; }
+      .nav-right { gap: 6px; }
+      .lang-toggle button { padding: 5px 8px; }
+      .mobile-panel { padding: 8px 16px 20px; }
+      .wrap { padding: 0 16px; }
+    }
     @media(min-width: 980px) {
       .nav-links { display: flex; }
       .nav-cta-group { display: flex; }
