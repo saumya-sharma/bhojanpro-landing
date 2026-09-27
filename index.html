@@ -159,25 +159,11 @@
       box-shadow: var(--shadow); background: #fff;
     }
     .hero-visual {
-      height: 320px; position: relative;
-      background:
-        radial-gradient(ellipse at 30% 40%, rgba(242,166,90,0.45), transparent 55%),
-        radial-gradient(ellipse at 70% 70%, rgba(241,90,34,0.28), transparent 50%),
-        linear-gradient(160deg, #2A1F18 0%, #4A3428 35%, #6B4A35 55%, #8B6345 75%, #3D2A22 100%);
+      height: 320px; position: relative; background: #2A1F18; overflow: hidden;
     }
-    .hero-visual::before {
-      content: ''; position: absolute; inset: 0;
-      background:
-        linear-gradient(180deg, transparent 40%, rgba(20,22,43,0.55) 100%),
-        repeating-linear-gradient(90deg, transparent, transparent 48px, rgba(255,255,255,0.03) 48px, rgba(255,255,255,0.03) 49px);
+    .hero-visual img {
+      width: 100%; height: 100%; object-fit: cover; display: block;
     }
-    .hero-visual-glow {
-      position: absolute; bottom: 28px; left: 28px; right: 28px; color: #fff; z-index: 1;
-    }
-    .hero-visual-glow strong {
-      display: block; font-family: 'Baloo 2', sans-serif; font-size: 22px; font-weight: 700; margin-bottom: 4px;
-    }
-    .hero-visual-glow span { font-size: 13.5px; opacity: 0.85; }
     .hero-caption {
       padding: 14px 18px; font-size: 13.5px; font-style: italic;
       color: var(--ink-soft); text-align: center; background: #fff;
@@ -325,14 +311,10 @@
       box-shadow: var(--shadow); background: #fff;
     }
     .gw-photo {
-      height: 340px; position: relative;
-      background:
-        radial-gradient(circle at 40% 35%, rgba(255,200,120,0.35), transparent 50%),
-        linear-gradient(165deg, #1a1510 0%, #3d2a1f 40%, #5c4030 70%, #2a1c14 100%);
+      height: 340px; position: relative; background: #1a1510; overflow: hidden;
     }
-    .gw-photo::after {
-      content: ''; position: absolute; inset: 0;
-      background: linear-gradient(180deg, transparent 50%, rgba(20,22,43,0.5) 100%);
+    .gw-photo img {
+      width: 100%; height: 100%; object-fit: cover; display: block;
     }
     .gw-caption {
       padding: 14px 16px; font-size: 13px; font-style: italic;
@@ -474,12 +456,7 @@
       </div>
       <div class="hero-card">
         <div class="hero-visual">
-          <div class="hero-visual-glow">
-            <strong class="lang-en">The room, unhurried</strong>
-            <strong class="lang-hi">कमरा, बिना हड़बड़ी</strong>
-            <span class="lang-en">Warm light. Steady service. Clear tickets.</span>
-            <span class="lang-hi">गर्म रोशनी। स्थिर सेवा। साफ़ टिकट।</span>
-          </div>
+          <img src="https://saumya-sharma.github.io/bhojanpro-landing/assets/hero-dining.jpg" alt="Independent dine-in room during service" width="640" height="506" loading="eager" decoding="async" style="width:100%;height:100%;object-fit:cover;border-radius:inherit;display:block;">
         </div>
         <div class="hero-caption lang-en">A quiet system for busy rooms</div>
         <div class="hero-caption lang-hi">व्यस्त कमरों के लिए शांत सिस्टम</div>
@@ -692,7 +669,7 @@
           </div>
         </div>
         <div class="gw-visual">
-          <div class="gw-photo"></div>
+          <div class="gw-photo"><img src="https://saumya-sharma.github.io/bhojanpro-landing/assets/groundwork-kitchen.jpg" alt="Kitchen service at an independent restaurant" width="640" height="504" loading="lazy" decoding="async"></div>
           <div class="gw-caption lang-en">Where food leaves the fire and hospitality touches the floor.</div>
           <div class="gw-caption lang-hi">जहाँ खाना आग छोड़ता है और मेहमाननवाज़ी फ़्लोर को छूती है।</div>
         </div>
